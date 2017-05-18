@@ -57,3 +57,16 @@ typings/
 # dotenv environment variables file
 .env
 
+node_modules
+www
+.tmp
+.sass-cache
+<%= appPath %>/bower_components
+coverage
+platforms
+plugins
+*.swp
+*.swo
+*.log
+*.DS_Store
+
