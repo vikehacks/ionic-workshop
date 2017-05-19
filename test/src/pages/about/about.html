@@ -1,11 +1,18 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Time
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+<div padding>
+     <button ion-button block (click)="getTime()">Begin time</button>
+ </div>
+<h1>Time: {{time}}</h1>
 
+<div padding>
+     <button ion-button block (click)="stopTime()">Stop time</button>
+ </div>
 </ion-content>

@@ -7,8 +7,22 @@ import { NavController } from 'ionic-angular';
 })
 export class AboutPage {
 
+	time: Date;
+	interval: number;
+
   constructor(public navCtrl: NavController) {
 
+  }
+
+  getTime() {
+  	this.time = new Date();
+  	this.interval = setInterval(()=> this.time = new Date(), 1000);
+
+  }
+
+  stopTime() {
+  	this.time = new Date()
+  	clearInterval(this.interval)
   }
 
 }
