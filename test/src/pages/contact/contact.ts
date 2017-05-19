@@ -9,9 +9,9 @@ import 'rxjs/add/operator/map';
   templateUrl: 'contact.html'
 })
 export class ContactPage {
-	memes: string[]
+	memes: any;
  	constructor(public navCtrl: NavController, public http: Http) {
-
+ 		this.getLinks();
 
 	}
 
