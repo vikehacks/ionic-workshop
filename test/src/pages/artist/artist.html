@@ -9,11 +9,14 @@
   
     
 
-  <form (ngSubmit)="handleForm()">
+  <form (ngSubmit)="handleForm()" style="text-align: center;">
   	<ion-item>
   		<ion-label>artist name</ion-label>
   		<ion-input type="text" [(ngModel)]="artist.name" name="name"></ion-input>
+
   	</ion-item>
+  	<button ion-button color="secondary" type="submit" style="margin-top: 20px;">Search</button>
+
   </form>
 
 <div style="text-align: center">
