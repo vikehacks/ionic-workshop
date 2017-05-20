@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Artistry: Info about popular artists</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h1 style="text-align: center;">{{artist.name}}</h1>
+  
+    
+
+  <form (ngSubmit)="handleForm()">
+  	<ion-item>
+  		<ion-label>artist name</ion-label>
+  		<ion-input type="text" [(ngModel)]="artist.name" name="name"></ion-input>
+  	</ion-item>
+  </form>
+
+<div style="text-align: center">
+  <button ion-button color="primary" style="text-align: center; margin-top: 30px;"><a style="color:white;" [href]="stats.url">Go to playlist</a></button>
+  <h1 style="font-weight: 100" [ngStyle]="{'color': popular_color}">popularity: {{stats.popularity}}</h1>
+  <h1 style="font-weight: 100">follower count: {{stats.follower_count}}</h1>
+</div>
+
+<div>
+	<img style="height:100%; width:100%; display:block!important; max-width:100% !important; height:auto !important;" [src]="stats.image_url">
+</div>
+
+<div style="margin-top:20px;">
+	<ion-item *ngFor="let genre of genres">
+		<h1 style="font-weight: 100">{{genre}}</h1>
+	</ion-item>
+</div>
+  
+
+</ion-content>

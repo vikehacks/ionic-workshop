@@ -7,6 +7,7 @@ import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { ArtistPage} from '../pages/artist/artist'
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,6 +18,7 @@ import { HttpModule } from '@angular/http';
   declarations: [
     MyApp,
     AboutPage,
+    ArtistPage,
     ContactPage,
     HomePage,
     TabsPage
@@ -30,6 +32,7 @@ import { HttpModule } from '@angular/http';
   entryComponents: [
     MyApp,
     AboutPage,
+    ArtistPage,
     ContactPage,
     HomePage,
     TabsPage

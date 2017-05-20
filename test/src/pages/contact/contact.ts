@@ -16,7 +16,7 @@ export class ContactPage {
 	}
 
   getLinks() {
-  	this.http.get('https://www.reddit.com/r/gifs/new/.json?limit=10').map(res => res.json()).subscribe(
+  	this.http.get('https://www.reddit.com/r/dankmemes/new/.json?limit=10').map(res => res.json()).subscribe(
     data => {
         this.memes = data.data.children;
     },
